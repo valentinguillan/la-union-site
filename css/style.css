@@ -26,11 +26,25 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--red); outline-o
 /* Layout utilidades */
 .container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
 .grid { display: grid; gap: 1.25rem; }
-.btn { display: inline-flex; align-items: center; gap: .5rem; padding: .9rem 1.2rem; border-radius: 999px; font-weight: 700; letter-spacing: .2px; transition: transform .15s ease, box-shadow .15s ease; }
+.btn {
+  --btn-h: 44px;               /* altura del botón (podés probar 40–48px) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: var(--btn-h);    /* asegura misma altura en todas las vistas */
+  padding: 0 1.2rem;           /* solo ancho variable, alto fijo */
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  line-height: 1;              /* evita que “engorde” por line-height */
+  font-size: 16px;             /* evita zoom/agrandado raro en iOS */
+  transition: transform .15s ease, box-shadow .15s ease;
+}
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
 .btn-primary { background: var(--red); color: var(--white); }
 .btn-outline { border: 2px solid var(--red); color: var(--red); background: transparent; }
-
+form .btn { width: auto; }
 /* Header */
 header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.85); backdrop-filter: blur(6px); border-bottom: 1px solid #eee; }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: .8rem 0; }
@@ -137,3 +151,36 @@ footer { background: var(--red); color: var(--beige); padding: 2.5rem 0; margin-
 }
 .social a:hover { background: transparent; opacity: .85; }
 .social svg { fill: currentColor; }    /* el ícono toma el color del texto del footer */
+
+/* === Botón: misma altura en desktop y móvil, sin “engordar” === */
+.btn {
+  --btn-h: 44px;          /* probá 40–44 si lo querés más bajo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--btn-h);
+  padding: 0 1.2rem;      /* sólo cambia el ancho, no el alto */
+  line-height: 1;         /* evita que el texto estire el alto */
+  font-size: 16px;        /* previene zoom raro en iOS */
+  border-radius: 999px;
+  border: 0;              /* quita borde nativo (el “aro” oscuro) */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Variantes (se mantienen) */
+.btn-primary { background: var(--red); color: var(--white); }
+.btn-outline  { border: 2px solid var(--red); color: var(--red); background: transparent; }
+
+/* En formularios: que no se estire a 100% y no se vuelva “circular” */
+form .btn {
+  width: auto;
+  min-width: 160px;       /* asegura que el ancho nunca sea menor que la altura */
+}
+
+/* Opcional: si en pantallas chicas el formulario y el aside quedan muy estrechos,
+   pasá la grilla de Contacto a 1 columna (evita columnas angostas que achican el botón) */
+@media (max-width: 560px) {
+  #contacto .grid { grid-template-columns: 1fr !important; }
+}
+
