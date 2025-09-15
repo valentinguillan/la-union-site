@@ -68,7 +68,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     next?.addEventListener('click', () => goTo(index + 1));
 
     // Autoplay con pausa al hover/focus
-    const start = () => (timer = setInterval(() => goTo(index + 1), 5000));
+    const start = () => { 
+    stop();                             // <- evita múltiples intervalos
+    timer = setInterval(() => goTo(index + 1), 5000);
+};
     const stop = () => timer && clearInterval(timer);
     root.addEventListener('mouseenter', stop);
     root.addEventListener('mouseleave', start);

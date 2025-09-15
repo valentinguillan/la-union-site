@@ -5,11 +5,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Panadería & Confitería La Unión — Tolhuin</title>
-  <meta name="description" content="Panadería & Confitería La Unión en Tolhuin, Tierra del Fuego. Tradición patagónica desde 1982. Facturas, alfajores, chocolates, mermeladas y más." />
+  <meta name="description" content="Panadería & Confitería La Unión en Tolhuin, Tierra del Fuego. Tradición patagónica desde 1985. Facturas, alfajores, chocolates, mermeladas y más." />
   <link rel="icon" href="assets/favicon.ico" />
   <meta property="og:image" content="assets/og-cover.jpg" />
   <meta property="og:title" content="Panadería & Confitería La Unión — Tolhuin" />
-  <meta property="og:description" content="Tradición patagónica desde 1982. #EternamenteAgradecidos" />
+  <meta property="og:description" content="Tradición patagónica desde 1985. #EternamenteAgradecidos" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://panaderialaunion.com.ar/" />
   <link rel="stylesheet" href="css/style.css" />
@@ -22,7 +22,7 @@
 
       </a>
       <nav>
-        <button class="burger" aria-label="Abrir menú" aria-expanded="false" id="burger" title="Menú">
+        <button class="burger" aria-label="Abrir menú" aria-controls="navLinks" aria-expanded="false" id="burger" title="Menú">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
         <div class="nav-links" id="navLinks">
@@ -67,28 +67,96 @@
 
     <!-- Slideshow derecha -->
     <div class="slideshow" aria-label="Galería de fotos de la panadería" tabindex="0">
-      <button class="slide-btn prev" aria-label="Foto anterior">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M15 19 8 12l7-7"/></svg>
-      </button>
+    <button class="slide-btn prev" aria-label="Foto anterior">
+  <!-- Chevron izquierda con stroke -->
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+  <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
 
       <div class="slides">
         <figure class="slide">
-          <img src="assets/img/about/1.jpg" alt="Fachada histórica de La Unión (años 90)" loading="lazy">
+          <img src="assets/img/about/1.jpg" alt="Fachada histórica de La Unión" loading="eager">
         </figure>
         <figure class="slide">
-          <img src="assets/img/about/2.jpg" alt="Equipo actual en el obrador" loading="lazy">
+          <img src="assets/img/about/2.jpg" alt="Fachada histórica de La Unión" loading="lazy">
         </figure>
         <figure class="slide">
-          <img src="assets/img/about/3.jpg" alt="Mostrador con clásico de la casa" loading="lazy">
+          <img src="assets/img/about/3.jpg" alt="Fachada histórica de La Unión" loading="lazy">
+        </figure>
+        <figure class="slide">
+          <img src="assets/img/about/4.jpg" alt="Fachada histórica de La Unión" loading="lazy">
+        </figure>
+        <figure class="slide">
+          <img src="assets/img/about/5.jpg" alt="Fachada histórica de La Unión" loading="lazy">
         </figure>
       </div>
 
       <button class="slide-btn next" aria-label="Foto siguiente">
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9 5l7 7-7 7"/></svg>
-      </button>
+  <!-- Chevron derecha con stroke -->
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+  <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
 
       <div class="dots" role="tablist" aria-label="Seleccionar foto"></div>
     </div>
+  </div>
+</section>
+<section id="historia">
+  <div class="container">
+    <h2>Nuestra historia</h2>
+
+    <article class="history-card media">
+  <div class="history-grid">
+    <div class="history-text">
+      <h3>Fundación <small>(1985)</small></h3>
+      <p>
+        Fundada en 1985 por <strong>Emilio Sáez</strong> y <strong>Cora Vargas</strong>, Panadería La Unión nació en el corazón de Tierra del Fuego, en el pequeño pueblo de Tolhuin. Emilio explica que el día que conoció Tolhuin sintió que era su lugar en el mundo:
+      </p>
+      <blockquote class="history-quote">
+        “Cuando vine en ese momento, estaba buscando esa señal en algún lugar de la Argentina y sentí que este era mi lugar. Ahí poco importó la proyección turística que tenía como pueblo. Es como cuando te enamorás”.
+      </blockquote>
+      <p>
+        Lo que comenzó como una pequeña panadería se ha convertido en un símbolo de la región, conocida por su calidez, hospitalidad y la dedicación de quienes han sido parte de esta historia.
+      </p>
+    </div>
+    <figure class="history-media">
+      <img src="assets/img/history/fundacion.jpg"
+           alt="Foto de los primeros años de La Unión en Tolhuin" loading="lazy">
+    </figure>
+  </div>
+</article>
+
+    <article class="history-card media">
+  <div class="history-grid">
+    <div class="history-text">
+      <h3>Resurgiendo de las cenizas <small>(23 de enero de 2021)</small></h3>
+      <p>
+        Un devastador incendio destruyó la panadería, llevándose años de esfuerzo y dedicación. Sin embargo, gracias al apoyo incondicional de la comunidad, Panadería La Unión renació más fuerte que nunca. Este evento marcó un nuevo capítulo en nuestra historia, uno que nos recuerda la importancia de la unión y la resiliencia.
+      </p>
+    </div>
+    <figure class="history-media">
+      <img src="assets/img/history/incendio.jpg"
+           alt="Incendio de 2021 en la panadería La Unión" loading="lazy">
+    </figure>
+  </div>
+</article>
+
+<article class="history-card media">
+  <div class="history-grid">
+    <div class="history-text">
+      <h3>La nueva panadería</h3>
+      <p>
+        Hoy, La Unión no solo es un lugar donde se elaboran productos de calidad, sino también un espacio que honra nuestra historia y valores. Con instalaciones renovadas y un enfoque en la sostenibilidad, seguimos ofreciendo a nuestros clientes lo mejor de la tradición fueguina.
+      </p>
+    </div>
+    <figure class="history-media">
+      <img src="assets/img/history/salon.jpg"
+           alt="La nueva panadería" loading="lazy">
+    </figure>
+  </div>
+</article>
   </div>
 </section>
 
@@ -159,9 +227,10 @@
     <section id="ubicacion">
   <div class="container">
     <h2>Ubicación</h2>
-    <p class="lead">Av. Los Ñires 302, Tolhuin, Tierra del Fuego, Argentina</p>
+    <p class="lead">Cerro Jeujepen 450, Tolhuin, Tierra del Fuego, Argentina</p>
     <iframe
       class="map"
+      title="Mapa de Panadería La Unión en Tolhuin"
       loading="lazy"
       allowfullscreen=""
       referrerpolicy="no-referrer-when-downgrade"
@@ -196,42 +265,48 @@
 </section>
 
 
-    <section id="contacto" style="background: var(--beige);">
-      <div class="container">
-        <h2>Contacto</h2>
-        <p class="lead">¿Consultas, pedidos especiales o eventos? Escribinos. ¡Estamos para ayudarte!</p>
-        <div class="grid" style="grid-template-columns: 1.2fr .8fr; align-items: start;">
-          <form class="card" action="https://formspree.io/f/your-id" method="POST" aria-label="Formulario de contacto">
-            <div class="pad grid" style="grid-template-columns: 1fr 1fr; gap: .75rem;">
-              <label>
-                <span>Nombre</span>
-                <input required type="text" name="name" placeholder="Tu nombre" style="width:100%;padding:.8rem;border:1px solid #ddd;border-radius:10px;" />
-              </label>
-              <label>
-                <span>Correo</span>
-                <input required type="email" name="email" placeholder="tu@correo.com" style="width:100%;padding:.8rem;border:1px solid #ddd;border-radius:10px;" />
-              </label>
-              <label style="grid-column: 1 / -1;">
-                <span>Mensaje</span>
-                <textarea required name="message" rows="4" placeholder="¿Cómo podemos ayudarte?" style="width:100%;padding:.8rem;border:1px solid #ddd;border-radius:10px;"></textarea>
-              </label>
-              <button class="btn btn-primary" type="submit">Enviar</button>
-              <p class="small">También podés escribirnos por <a href="https://wa.me/5492964554343" target="_blank" rel="noopener" style="color:var(--red);text-decoration:underline;">WhatsApp</a>.</p>
-            </div>
-          </form>
-          <aside class="card">
-            <div class="pad">
-              <h3 style="margin-top:0">Datos útiles</h3>
-              <ul style="margin: 0; padding-left: 1.1rem;">
-                <li>Av. Los Ñires 302, Tolhuin, Tierra del Fuego</li>
-                <li>Tel: <a href="tel:+5402964492441" style="text-decoration:underline">+54 2964 492441</a></li>
-                <li>Horarios: todos los días de 7 a 23 hs</li>
-              </ul>
-            </div>
-          </aside>
+   <section id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p class="lead">¿Consultas, pedidos especiales o eventos? Escribinos. ¡Estamos para ayudarte!</p>
+
+    <div class="grid contact-grid">
+      <form class="card" action="https://formspree.io/f/your-id" method="POST" aria-label="Formulario de contacto">
+        <div class="pad grid form-grid">
+          <label>
+            <span>Nombre</span>
+            <input class="input" required type="text" name="name" placeholder="Tu nombre" />
+          </label>
+          <label>
+            <span>Correo</span>
+            <input class="input" required type="email" name="email" placeholder="tu@correo.com" />
+          </label>
+          <label class="full-row">
+            <span>Mensaje</span>
+            <textarea class="textarea" required name="message" rows="4" placeholder="¿Cómo podemos ayudarte?"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p class="small">
+            También podés escribirnos por
+            <a class="whats-link" href="https://wa.me/5492964554343" target="_blank" rel="noopener">WhatsApp</a>.
+          </p>
         </div>
-      </div>
-    </section>
+      </form>
+
+      <aside class="card">
+        <div class="pad">
+          <h3>Datos útiles</h3>
+          <ul class="list-plain">
+            <li>Cerro Jeujepen 450, Tolhuin, Tierra del Fuego</li>
+            <li>Tel: <a class="link-underline" href="tel:+5402964492441">+54 2964 492441</a></li>
+            <li>Horarios: todos los días de 7 a 23 hs</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer>
