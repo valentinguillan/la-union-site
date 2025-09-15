@@ -67,8 +67,6 @@ section h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 1rem; }
 
 /* Ubicación */
 .map { border: 0; width: 100%; height: 380px; border-radius: var(--radius); box-shadow: var(--shadow); }
-.contact-list { display: grid; gap: .5rem; margin-top: 1rem; }
-.contact-item { display: flex; align-items: center; gap: .6rem; }
 
 /* Footer */
 footer { background: var(--red); color: var(--beige); padding: 2.5rem 0; margin-top: 2rem; }
