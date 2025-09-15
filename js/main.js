@@ -27,8 +27,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       if (el) {
         e.preventDefault();
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        nav.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
+        if (nav) nav.classList.remove('open');
+        if (burger) burger.setAttribute('aria-expanded', 'false');
+
       }
     }
   });
