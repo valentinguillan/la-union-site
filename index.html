@@ -52,29 +52,45 @@
             <a class="btn btn-outline" href="#productos">Ver productos destacados</a>
           </div>
         </div>
-        <div aria-hidden="true">
-          <svg viewBox="0 0 600 480" width="100%" role="img" aria-label="Ilustración decorativa" focusable="false">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stop-color="var(--beige)"/>
-                <stop offset="100%" stop-color="#fff"/>
-              </linearGradient>
-            </defs>
-            <rect x="0" y="0" width="600" height="480" fill="url(#g1)"/>
-            <circle cx="460" cy="90" r="38" fill="var(--red)" opacity=".12"/>
-            <circle cx="520" cy="140" r="16" fill="var(--red)" opacity=".1"/>
-            <path d="M40 360 C160 300, 240 420, 360 360 S560 360, 580 420" fill="none" stroke="var(--red)" stroke-width="10" opacity=".12"/>
-          </svg>
-        </div>
+        
       </div>
     </section>
 
     <section id="quienes">
-      <div class="container">
-        <h2>Quiénes somos</h2>
-        <p class="lead">Nacida al calor de los hornos fueguinos, La Unión acompaña a vecinos, viajeras y familias desde hace 40 años. Respetamos recetas tradicionales y seleccionamos ingredientes nobles para ofrecer facturas, panes, tortas, chocolates y sabores que hablan de nuestra Tierra del Fuego.</p>
+  <div class="container about-grid">
+    <div class="about-copy">
+      <h2>Quiénes somos</h2>
+      <p class="lead">
+        Nacida al calor de los hornos fueguinos, La Unión acompaña a vecinos, viajeras y familias desde hace 40 años. Respetamos recetas tradicionales y seleccionamos ingredientes nobles para ofrecer facturas, panes, tortas, chocolates y sabores que hablan de nuestra Tierra del Fuego.
+      </p>
+    </div>
+
+    <!-- Slideshow derecha -->
+    <div class="slideshow" aria-label="Galería de fotos de la panadería" tabindex="0">
+      <button class="slide-btn prev" aria-label="Foto anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M15 19 8 12l7-7"/></svg>
+      </button>
+
+      <div class="slides">
+        <figure class="slide">
+          <img src="assets/img/about/1.jpg" alt="Fachada histórica de La Unión (años 90)" loading="lazy">
+        </figure>
+        <figure class="slide">
+          <img src="assets/img/about/2.jpg" alt="Equipo actual en el obrador" loading="lazy">
+        </figure>
+        <figure class="slide">
+          <img src="assets/img/about/3.jpg" alt="Mostrador con clásico de la casa" loading="lazy">
+        </figure>
       </div>
-    </section>
+
+      <button class="slide-btn next" aria-label="Foto siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="dots" role="tablist" aria-label="Seleccionar foto"></div>
+    </div>
+  </div>
+</section>
 
     <section id="productos" aria-labelledby="prod-title" style="background: #fff;">
       <div class="container">
